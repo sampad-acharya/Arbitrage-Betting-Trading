@@ -1,0 +1,9 @@
+#!/bin/sh
+'''exec' "$(command -v python3 || command -v python2 || command -v python)" "$0" "$@" || {
+    echo "Error: No suitable Python interpreter found (tried python3, python2, python)" >&2
+    exit 1
+}
+'''
+
+
+print("Hello from Python!")
